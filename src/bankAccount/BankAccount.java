@@ -1,4 +1,4 @@
-package BankAccount;
+package bankAccount;
 
 public class BankAccount {
   private float balance;

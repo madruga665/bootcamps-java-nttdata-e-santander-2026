@@ -1,5 +1,5 @@
-import BankAccount.BankAccountMenu;
-import Petshop.PetMachineMenu;
+import bankAccount.BankAccountMenu;
+import petshop.PetMachineMenu;
 
 import java.util.Scanner;
 

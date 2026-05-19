@@ -1,4 +1,4 @@
-package Petshop;
+package petshop;
 
 public class PetMachine {
   private int water = 30;
