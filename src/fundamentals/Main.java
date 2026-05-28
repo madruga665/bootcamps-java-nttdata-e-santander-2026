@@ -14,8 +14,15 @@ public class Main {
 
     System.out.println("==== Digite o ano do seu nascimento ====");
     int yearOfBirth = scanner.nextInt();
-    int calculateAge = currentYear - yearOfBirth;
+    int age = currentYear - yearOfBirth;
+    boolean canDrive = age >= 18;
 
-    System.out.printf("Olá %s, tudo certo? você tem %s anos", name, calculateAge);
+    if (canDrive) {
+      System.out.printf("Olá %s, tudo certo? você tem %s anos e já pode dirigir", name, age);
+
+      return;
+    }
+
+    System.out.printf("Olá %s, tudo certo? você ainda é menor de idade e não pode dirigir", name);
   }
 }
