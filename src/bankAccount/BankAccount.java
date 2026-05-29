@@ -1,21 +1,21 @@
 package bankAccount;
 
 public class BankAccount {
-  private float balance;
-  private float specialLimit;
+  private double balance;
+  private double specialLimit;
   private boolean hasAccount = false;
 
   public BankAccount(float balance) {
     this.balance = balance;
   }
 
-  private float specialLimitTax() {
+  private double specialLimitTax() {
     var usedSpecialLimit = Math.abs(balance) - specialLimit;
 
     return (usedSpecialLimit / 100) * 20;
   }
 
-  public void deposit(float amount) {
+  public void deposit(double amount) {
     var tax = specialLimitTax();
 
     if (balance < 0 ) {
@@ -30,11 +30,11 @@ public class BankAccount {
     balance -= amount;
   }
 
-  public float getBalance() {
+  public double getBalance() {
     return balance;
   }
 
-  public float getSpecialLimit() {
+  public double getSpecialLimit() {
     if (balance < 0) {
       return specialLimit + balance;
     } else {
