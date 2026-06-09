@@ -1,4 +1,4 @@
-package StreamsApi;
+package streamsApi;
 
 import ticket.AudioType;
 import ticket.Family;

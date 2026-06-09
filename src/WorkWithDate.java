@@ -3,7 +3,7 @@ import petshop.PetMachineMenu;
 
 import java.util.Scanner;
 
-public class Main {
+public class WorkWithDate {
   private final static Scanner scanner = new Scanner(System.in).useDelimiter("\\n");
   private final static PetMachineMenu petMachineMenu = new PetMachineMenu();
   private final static BankAccountMenu bankAccountMenu = new BankAccountMenu();
